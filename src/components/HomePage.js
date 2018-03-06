@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-import { Header } from './Header';
+import { Link } from 'react-router-dom';
 
-class Homepage extends Component {
-	render() {
+const HomePage = () => {
 		return (
-			<Header />
-    		<div className="container">
+    		<div className='container'>
     			<p>Hello World</p>
     		</div>
-    	);
-  	}
-}
+    	)
+  }
 
-export default Homepage;
+export default HomePage;

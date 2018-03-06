@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-import { Header } from './Header';
+import { Link } from 'react-router-dom';
 
-class Portfolio extends Component {
-	render() {
+const Portfolio = () => {
 		return (
-			<Header />
     		<div className="container">
-    			<p>Hellow World</p>
+    			<p>Hello World</p>
     		</div>
-    	);
-	}
-}
+    	)
+    }
 
 export default Portfolio;
