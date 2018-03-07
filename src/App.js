@@ -4,16 +4,16 @@ import HomePage from './components/HomePage';
 import Portfolio from './components/Portfolio';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Navigation from './components/Navigation';
+import Contact from './components/Contact';
 
 const App = () => {
   return(
     <div>
       <Header />
-      <Navigation />
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route exact path='/portfolio' compontent={Portfolio} />
+          <Route exact path='/contact' compontent={Contact} />
         </Switch>
       <Footer />
     </div>

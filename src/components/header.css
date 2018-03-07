@@ -16,6 +16,17 @@
 	margin-top: 29%;
 }
 
-.header .row div {
+.header .row.logo div {
 	height: 190px;
+	margin-bottom:15px;
+}
+
+.header-nav .row {
+	display:flex;
+	justify-content: center;
+	margin: 0px 20px 0px 20px;
+}
+
+.header-nav a {
+	font-size: 20px;
 }
