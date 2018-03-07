@@ -5,7 +5,7 @@ import './homepage.css';
 
 const HomePage = () => {
 		return (
-    		<div className='homepage container'>
+    		<div className='homepage container-fluid'>
     			<div className="row">
     				<div className="col-sm-4 col left">
                         <h1>FULL</h1>
