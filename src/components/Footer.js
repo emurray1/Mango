@@ -4,7 +4,9 @@ class Footer extends Component {
 	render() {
 		return (
     		<div className="jumbotron">
-    			<p>Footer</p>
+    			<div className="container">
+    				<p>Footer</p>
+    			</div>
     		</div>
     	);
   	}

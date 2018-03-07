@@ -1,0 +1,22 @@
+.homepage .row .col {
+	height: 450px;
+}
+
+.homepage .row .left {
+	background-color: #325922;
+	opacity: 0.5;
+}
+
+.homepage .row .center {
+	background-color: #85A573;
+	opacity: 0.5;
+}
+
+.homepage .row .right {
+	background-color: #7C0403;
+	opacity: 0.5;
+}
+
+.homepage .row .fa-react, .homepage .row .fa-node, .homepage .row .fa-aws {
+	color: white;
+}

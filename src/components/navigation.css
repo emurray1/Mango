@@ -1,0 +1,12 @@
+.header-nav {
+	background-color: #F5E6AB;
+}
+
+.header-nav .row {
+	display:flex;
+	justify-content: center;
+}
+
+.header-nav a {
+	line-height: 5;
+}
