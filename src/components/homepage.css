@@ -1,19 +1,6 @@
-.homepage .row .col {
-	height: 450px;
+.homepage .container {
+	min-height: 750px;
+	color: #BFBFBF;
 }
 
-.homepage .row .left {
-	background-color: #325922;
-}
 
-.homepage .row .center {
-	background-color: #85A573;
-}
-
-.homepage .row .right {
-	background-color: #7C0403;
-}
-
-.homepage .row .fa-react, .homepage .row .fa-node, .homepage .row .fa-aws {
-	color: white;
-}

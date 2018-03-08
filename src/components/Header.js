@@ -4,28 +4,22 @@ import { Link } from 'react-router-dom';
 import MangoLogo from '../images/Mango.png';
 import './header.css';
 
-const Header = () => {
-	return (
-		<div>
-			<div className="header-top container-fluid">
-	   			<p>Phone: 802.829.1671</p>
-	   		</div>
-	   		<div className="header jumbotron">
+const Header = () => (
+   		<div className="header container-fluid">
 	   			<div className="container">
 	   				<div className="row logo">
-	   					<div className="col-sm-4">
+	   					<div className="col-sm-5">
 			   				<hr className="break"/>
 			   			</div>
-			   			<div className="col-sm-4 logo">
+			   			<div className="col-sm-2 logo">
 			   				<img className="img" alt='Mango Development Logo'  src={MangoLogo} />
 			   			</div>
-			   			<div className="col-sm-4">
+			   			<div className="col-sm-5">
 			   				<hr className="break"/>
 			   			</div>
 			   		</div>
 			   		<div className="row header-nav">
 				   		<div className="nav">
-		  					<div className="row">
 					  			<Link to="/" className="">
 					      			<div className="content">
 					        			Home
@@ -41,13 +35,11 @@ const Header = () => {
 					        			Contact
 					      			</div>
 					    		</Link>
-		    				</div>
 		  				</div>
 		  			</div>
 	   			</div>
 	   		</div>
-	   	</div>
+	
    	)
-}
  
 export default Header;

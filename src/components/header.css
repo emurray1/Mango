@@ -1,17 +1,6 @@
-.header-top {
-	background-color: #5B5B5C;
-}
-
-.header-top p {
-	display:flex;
-	justify-content: flex-end;
-	color:white;
-	font-size:15px;
-	margin-top: 5px;
-}
-
-.header.jumbotron {
+.header.container-fluid {
 	margin-bottom: 0px;
+	background-color: #151515;
 }
 
 .header .logo  {
@@ -20,24 +9,27 @@
 }
 
 .header .logo img {
-	width:250px;
+	width:200px;
 }
 
 .break {
 	border-style:inset;
-	margin-top: 5px;
+	margin-top: 85px;
 }
 
 .header .row.logo div {
-	height: 190px;
-	margin-bottom:15px;
+	height: 130px;
 }
 
-.header-nav .row {
+.row.header-nav .nav {
+	margin-bottom: 10px;
 	display:flex;
-	justify-content: space-between;	
+	justify-content: space-evenly;	
+	align-content: center;
 }
 
 .header-nav a {
-	font-size: 25px;
+	font-size: 20px;
+	min-width: 70px;
+	color: #BD631E; 
 }
