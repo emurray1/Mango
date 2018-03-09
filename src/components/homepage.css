@@ -1,6 +1,11 @@
-.homepage .container {
-	min-height: 750px;
-	color: #BFBFBF;
+.homepage .box {
+	display:flex;
+	justify-content: center;
+	background-color: #BD631E;
 }
 
+.intro {
+	background-color: #404040;
+	color:white;
+}
 

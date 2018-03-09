@@ -24,12 +24,21 @@
 .row.header-nav .nav {
 	margin-bottom: 10px;
 	display:flex;
-	justify-content: space-evenly;	
-	align-content: center;
+	justify-content: flex-end;
+	
 }
 
 .header-nav a {
+	margin: 10px 15px 10px 0px;
+	display:box;
 	font-size: 20px;
-	min-width: 70px;
 	color: #BD631E; 
+	font-family: Montserrat,sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.header-nav a:hover {
+	text-decoration: none;
+	background-color: #404040; 
 }

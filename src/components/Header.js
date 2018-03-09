@@ -5,6 +5,10 @@ import MangoLogo from '../images/Mango.png';
 import './header.css';
 
 const Header = () => (
+		constructor(props) {
+			super(prop);
+			this.state = {hover:false};
+		}
    		<div className="header container-fluid">
 	   			<div className="container">
 	   				<div className="row logo">
