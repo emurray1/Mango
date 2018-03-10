@@ -1,0 +1,23 @@
+.homepage .rotate {
+	height: 1200px;
+	background: linear-gradient(#151515,#404040);
+	color:white;
+	display:flex;
+	justify-content: center;
+}
+
+.homepage .box {
+	display:flex;
+	justify-content: center;
+	background-color: #BD631E;
+}
+
+.intro {
+	background-color: #404040;
+}
+
+.homepage .row>h1 {
+	color:white;
+	display:flex;
+	justify-content: flex-start;
+}

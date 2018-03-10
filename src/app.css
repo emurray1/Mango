@@ -1,0 +1,23 @@
+body {
+	font-family: Montserrat,sans-serif;
+}
+
+a {
+	color: #BD631E;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #BD631E; 
+	background-color: #404040; 
+}
+
+a:visited {
+	color: #BD631E; 
+}
+
+a:focus {
+	text-decoration: none;
+	color: #BD631E; 
+}
+

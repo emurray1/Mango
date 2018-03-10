@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import HomePage from './components/HomePage';
+
+import HomePage from './homepage/HomePage';
 import Portfolio from './components/Portfolio';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import Contact from './components/Contact';
+import Product from './components/Product';
+import Header from './Header';
+import Footer from './Footer';
+
+import './app.css'
 
 const App = () => {
   return(
@@ -12,6 +16,7 @@ const App = () => {
       <Header />
         <Switch>
           <Route exact path='/' component={HomePage} />
+          <Route exact path='/product' component={Product} />
           <Route exact path='/portfolio' compontent={Portfolio} />
           <Route exact path='/contact' compontent={Contact} />
         </Switch>

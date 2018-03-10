@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Rotate from './Rotate';
 
 import './homepage.css';
 
 const HomePage = () => {
 		return (
     		<div className='homepage container-fluid'>
+                    <div className="row">
+                        <h1>We are</h1>
+                        <div className="col-lg-12 rotate">
+                            <h1><Rotate /></h1>
+                        </div>
+                    </div>
+
     			<div className="row">
     				<div className="col-sm-4">
                         <div className="box">
