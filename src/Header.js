@@ -5,8 +5,8 @@ import MangoLogo from './images/Mango.png';
 import './header.css';
 
 const Header = () => (
-	<div className="container-fluid">
-   		<div className="header container">
+	<div className="header container-fluid">
+   		<div className="container">
    			<div className="row">
    				<div className="col-sm-12 login">
 					<Link to="/login">

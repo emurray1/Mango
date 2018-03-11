@@ -1,24 +1,24 @@
-.homepage .rotate {
-	height: 1200px;
-	background: linear-gradient(#151515,#404040);
-	color:white;
-	display:flex;
-	justify-content: center;
+.homepage .mission-statement {
+	height: 650px;
+	background: linear-gradient(#262626,#151515);
 }
 
-.homepage .box {
-	display:flex;
-	justify-content: center;
-	background-color: #BD631E;
+.homepage .mission-statement .inner {
+	top: 175px;
 }
 
-.intro {
-	background-color: #404040;
-}
-
-.homepage .row>h1 {
+.homepage .row h1, .homepage .set-width {
 	font-size: 55px;
 	color:white;
 	display:flex;
 	justify-content: center;
+}
+
+.homepage .set-width {
+	min-width: 420px;
+}
+
+.homepage .company-offer {
+	min-height: 360px;
+	background-color: #E5E5E5;
 }

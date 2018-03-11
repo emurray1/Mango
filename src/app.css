@@ -21,3 +21,6 @@ a:focus {
 	color: #BD631E; 
 }
 
+.hide {
+	display: none;
+}

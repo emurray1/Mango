@@ -1,11 +1,9 @@
 .container-fluid {
 	margin-bottom: 0px;
-	background-color: #131313;
 }
 
 .header {
-	position: static;
-	max-width: 1170px;
+	background-color: #131313;
 	width: 100%;
 }
 

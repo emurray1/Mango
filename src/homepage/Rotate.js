@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
-import './rotate.css';
 import TextRotator from '../utils/TextRotator';
 
 const content = [
@@ -28,7 +26,7 @@ const content = [
 ];
 
 const Rotate = () => (
-    <div>
+    <div className='set-width'>
     	<TextRotator
       		content={content}
       		time={2000}

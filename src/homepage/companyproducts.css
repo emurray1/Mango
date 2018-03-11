@@ -1,0 +1,10 @@
+.homepage .company-offer {
+	min-height: 360px;
+	background-color: #E5E5E5;
+}
+
+.company-products .box {
+	height: 200px;
+	width: auto;
+	background-color: #151515;
+}

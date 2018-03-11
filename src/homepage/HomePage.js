@@ -1,35 +1,26 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Rotate from './Rotate';
+import CompanyProducts from './CompanyProducts'
 
 import './homepage.css';
 
 const HomePage = () => {
 		return (
     		<div className='homepage container-fluid'>
-                <div className="row">
-                    <h1>We design and develop web & mobile apps</h1>
-                    <h1>to support<Rotate /></h1>
-                    <h1>on their missions.</h1>
+                <div className="row mission-statement">
+                    <div className="inner col-lg-12">
+                        <h1>We design and develop web & mobile apps</h1>
+                        <h1>to support <Rotate /></h1>
+                        <h1>on their missions.</h1>
+                    </div>
                 </div>
-    			<div className="row">
-    				<div className="col-sm-4">
-                        <div className="box">
-    					   <span className="fab fa-react fa-10x"></span>
-                        </div>
-    				</div>
-    				<div className="col-sm-4">
-                        <div className="box">
-    					   <span className="fab fa-node fa-10x"></span>
-                        </div>
-    				</div>
-    				<div className="col-sm-4">
-                        <div className="box">
-    					   <span className="fab fa-aws fa-10x"></span>
-                        </div>
-    				</div>
-    			</div>
-                <div className="row intro">
+    			<div className="row company-offer">
+                    <div className="inner col-lg-12">
+    		              <CompanyProducts />
+                    </div>
+                </div>
+                <div className="row">
                     <div className="container">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mattis lectus sed finibus. Ut non varius mauris. Curabitur vulputate sit amet mi egestas sollicitudin. Sed mattis augue quis malesuada vehicula. Aliquam eget orci velit. Duis varius commodo odio. Nullam id iaculis justo. Donec aliquam cursus leo, non volutpat nisl finibus eget. Proin vel orci sit amet massa posuere sodales. Quisque luctus diam eget sollicitudin hendrerit. Pellentesque augue nibh, congue eu neque eu, maximus consequat tellus. Sed auctor quam et ante blandit, sed condimentum eros pellentesque. Nam et porttitor ligula, non porttitor urna. Integer ut tristique dolor, sagittis sollicitudin purus. In hac habitasse platea dictumst.</p>
                     </div>
