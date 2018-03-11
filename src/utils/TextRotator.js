@@ -1,92 +1,158 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import './textrotator.css';
 
 class TextRotator extends Component {
-  constructor() {
-    super();
-
+  constructor(props) {
+    super(props);
     this.state = {
-      current: null,
       index: 0,
+      output: '',
+      substrLength: 0,
     };
-
-    this.willUnmount = false;
+    this.timeouts = [];
   }
 
   componentDidMount() {
-    this.startTextRotator();
+    this._animate.bind(this)();   // begin the animation loop
   }
 
   componentWillUnmount() {
-    clearInterval(this.interval);
-    clearTimeout(this.timeOut);
-    this.willUnmount = true;
+    this.timeouts.map(x => clearTimeout(x));  // stop all the loops
   }
 
-  startTextRotator = () => {
-    const { content, startDelay, time } = this.props;
+  _loop(loopingFunc, pause) {
+    // save the timeouts so we can stop on unmount
+    const timeout = setTimeout(loopingFunc, pause);
+    this.timeouts.push(timeout);
 
-    if (content && content.length === 1) {
-      this.setState({ current: content[0] });
-    } else if (content && content.length > 1) {
-      const current = content[0];
-      this.setState({ current });
-
-      this.timeOut = setTimeout(() => {
-        this.interval = setInterval(() => {
-          this.nextText();
-        }, time);
-      }, startDelay);
-    }    
-  }
-
-  nextText = () => {
-    if (!this.willUnmount) {
-      const { content } = this.props;
-      const currentStep = this.state.index;
-      const total = content.length || 0;
-      const index = (total === currentStep + 1) ? 0 : currentStep + 1;
-      const current = content[index];
-
-      this.setState({ current, index });
+    // prevent memory leak
+    const maxTimeouts = 100;
+    if (this.timeouts.length > maxTimeouts) {
+      clearTimeout(this.timeouts[0]);
+      this.timeouts.shift();
     }
   }
 
-  render() {
-    const { current, index } = this.state;
-    const { className, animation = 'fade', text } = current || {};
+  _type(text, callback) {
+    const { output } = this.state;
+    const { typingInterval } = this.props;
+    const loopingFunc = this._type.bind(this, text, callback);
 
-    if (!text) return <span />;
+    // set the string one character longer
+    this.setState({output: text.substr(0, output.length + 1)});
+
+    // if we're still not done, recursively loop again
+    if (output.length < text.length) {
+      this._loop(loopingFunc, typingInterval);
+    } else {
+      callback();
+    }
+  }
+
+  _erase(callback) {
+    const { output } = this.state;
+    const { deletingInterval } = this.props;
+    const loopingFunc = this._erase.bind(this, callback);
+
+    // set the string one character shorter
+    this.setState({output: output.substr(0, output.length - 1)});
+
+    // if we're still not done, recursively loop again
+    if (output.length !== 0) {
+      this._loop(loopingFunc, deletingInterval);
+    } else {
+      callback();
+    }
+  };
+
+  _overwrite(text, callback) {
+    const { output, substrLength } = this.state;
+    const { deletingInterval } = this.props;
+    const loopingFunc = this._overwrite.bind(this, text, callback);
+
+    this.setState({
+      output: text.substr(0, substrLength) + output.substr(substrLength),
+      substrLength: substrLength + 1,
+    });
+
+    if (text.length !== substrLength) {
+      this._loop(loopingFunc, deletingInterval);
+    } else {
+      this.setState({
+        output: text,
+        substrLength: 0,
+      });
+      callback();
+    }
+  };
+
+  _animate() {
+    const { index } = this.state;
+    const { items, pause, emptyPause, eraseMode } = this.props;
+    const type = this._type;
+    const erase = this._erase;
+    const overwrite = this._overwrite;
+    const loopingFunc = this._animate.bind(this);
+    const nextIndex = index === items.length - 1 ? 0 : index + 1;
+
+    const nextWord = () => {
+      this.setState({index: nextIndex});
+      this._loop(loopingFunc, emptyPause);
+    };
+
+    type.bind(this)(items[index], () => {
+      if (eraseMode === 'overwrite') {
+        this._loop(overwrite.bind(this, items[nextIndex], nextWord), pause);
+      } else {
+        this._loop(erase.bind(this, nextWord), pause);
+      }
+    });
+  };
+
+  render() {
+    const {
+      color,
+      cursor,
+      deletingInterval,
+      emptyPause,
+      items,
+      pause,
+      eraseMode,
+      typingInterval,
+      ...other
+    } = this.props;
 
     return (
-      <ReactCSSTransitionGroup
-        transitionName={`react-text-rotator-${animation}`}
-        transitionEnterTimeout={300}
-        transitionLeaveTimeout={0}
-        transitionLeave={false}
-      >
-        <span key={index} className={className}>{text}</span>
-      </ReactCSSTransitionGroup>
+      <span style={{ color }} {...other}>
+        { this.state.output }
+        { cursor ? <span className="react-rotating-text-cursor">|</span> : null }
+      </span>
     );
   }
 }
 
 TextRotator.propTypes = {
-	content: PropTypes.arrayOf(PropTypes.shape({
-    text: PropTypes.string.isRequired,
-    className: PropTypes.string,
-    animation: PropTypes.oneOf(['fade']),
-  })).isRequired,
-  time: PropTypes.number,
-  startDelay: PropTypes.number,
+  color: PropTypes.string,
+  cursor: PropTypes.bool,
+  deletingInterval: PropTypes.number,
+  emptyPause: PropTypes.number,
+  eraseMode: PropTypes.string,
+  items: PropTypes.array,
+  pause: PropTypes.number,
+  typingInterval: PropTypes.number,
 };
 
 TextRotator.defaultProps = {
-  time: 2500,
-  startDelay: 0,
+  color: '#BD631E',
+  cursor: true,
+  deletingInterval: 50,
+  emptyPause: 1000,
+  eraseMode: 'erase',
+  items: ['Businesses', 'Non-Profits', 'Organizations', 'Startups'],
+  pause: 2000,
+  typingInterval: 50,
 };
 
 export default TextRotator;

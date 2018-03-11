@@ -6,28 +6,23 @@ import TextRotator from '../utils/TextRotator';
 
 const content = [
   {
-    text: 'Developers',
-    className: 'rotate-text',
+    text: ' Businesses',
+    className: 'animated fadeInUp rotate-text',
     animation: 'fade-up',
   },
   {
-    text: 'Innovators',
-    className: 'rotate-text',
+    text: ' Startups',
+    className: 'animated fadeInUp rotate-text',
     animation: 'fade-up',
   },
   {
-    text: 'Innovators',
-    className: 'rotate-text',
+    text: ' Non-Profits',
+    className: 'animated fadeInUp rotate-text',
     animation: 'fade-up',
   },
   {
-    text: 'Developers',
-    className: 'rotate-text',
-    animation: 'fade-up',
-  },
-  {
-    text: 'Developers',
-    className: 'rotate-text',
+    text: ' Organizations',
+    className: 'animated fadeInUp rotate-text',
     animation: 'fade-up',
   },
 ];

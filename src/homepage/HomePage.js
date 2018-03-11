@@ -7,13 +7,11 @@ import './homepage.css';
 const HomePage = () => {
 		return (
     		<div className='homepage container-fluid'>
-                    <div className="row">
-                        <h1>We are</h1>
-                        <div className="col-lg-12 rotate">
-                            <h1><Rotate /></h1>
-                        </div>
-                    </div>
-
+                <div className="row">
+                    <h1>We design and develop web & mobile apps</h1>
+                    <h1>to support<Rotate /></h1>
+                    <h1>on their missions.</h1>
+                </div>
     			<div className="row">
     				<div className="col-sm-4">
                         <div className="box">

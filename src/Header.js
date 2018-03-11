@@ -26,14 +26,14 @@ const Header = () => (
 			        		What We Do
 			      		</div>
 			    	</Link>
+			    	<Link to="/portfolio" className="">
+			      		<div className='content'>
+			        		What We Did
+			      		</div>
+			    	</Link>
 			    	<Link to="/" className="">
 			      		<div className="content">
 			        		Who We Are
-			      		</div>
-			    	</Link>
-			    	<Link to="/portfolio" className="">
-			      		<div className='content'>
-			        		Our Record
 			      		</div>
 			    	</Link>
 			    	<Link to="/contact" className="">
