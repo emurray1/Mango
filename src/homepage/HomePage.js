@@ -4,17 +4,17 @@ import Rotate from './Rotate';
 import CompanyProducts from './CompanyProducts'
 
 import './homepage.css';
-import HeroVideo from '../images/Love_Coding.webm';
+import HeroVideo from '../images/girls_code.mp4';
 
 const HomePage = () => {
 		return (
     		<div className='homepage container-fluid'>
                 <div className="row mission-statement">
-                  {/*   <div className="fullscreen-bg col-md-12">
-                            <video loop autoplay className="fullscreen-bg_video">
-                                <source src={HeroVideo} type="video/webm" />
-                            </video>
-                        </div> */}
+                    <div className="fullscreen-bg col-md-12">
+                        <video className="fullscreen-bg_video" autoPlay loop >
+                            <source src={HeroVideo} type="video/mp4" />
+                        </video>
+                    </div>
                     <div className="inner col-lg-12">
                         <h1>We design and develop web & mobile apps</h1>
                         <div className="col-md-6 left">

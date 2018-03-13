@@ -1,10 +1,5 @@
 .homepage .mission-statement {
 	height: 650px;
-	background: linear-gradient(#262626,#151515);
-}
-
-.homepage .mission-statement .inner {
-	top: 175px;
 }
 
 .homepage .row.mission-statement h1 {
@@ -30,6 +25,7 @@
 }
 
 .fullscreen-bg {
+	height: 0px;
     z-index: -100;
     padding-left: 0;
     padding-right: 0;
@@ -38,4 +34,9 @@
 .fullscreen-bg_video {
     min-width: 100%;
     min-height: 100%;
+}
+
+.inner {
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
 }
