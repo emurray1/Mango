@@ -148,10 +148,10 @@ TextRotator.defaultProps = {
   color: '#BD631E',
   cursor: true,
   deletingInterval: 50,
-  emptyPause: 1000,
+  emptyPause: 500,
   eraseMode: 'erase',
   items: ['Businesses', 'Non-Profits', 'Organizations', 'Startups'],
-  pause: 2000,
+  pause: 1000,
   typingInterval: 50,
 };
 

@@ -4,15 +4,28 @@ import Rotate from './Rotate';
 import CompanyProducts from './CompanyProducts'
 
 import './homepage.css';
+import HeroVideo from '../images/Love_Coding.webm';
 
 const HomePage = () => {
 		return (
     		<div className='homepage container-fluid'>
                 <div className="row mission-statement">
+                  {/*   <div className="fullscreen-bg col-md-12">
+                            <video loop autoplay className="fullscreen-bg_video">
+                                <source src={HeroVideo} type="video/webm" />
+                            </video>
+                        </div> */}
                     <div className="inner col-lg-12">
                         <h1>We design and develop web & mobile apps</h1>
-                        <h1>to support <Rotate /></h1>
-                        <h1>on their missions.</h1>
+                        <div className="col-md-6 left">
+                            <h1>to support </h1>
+                        </div>
+                        <div className="col-md-6 right">
+                            <h1><Rotate /></h1>
+                        </div>
+                        <div className="col-lg-12">
+                            <h1>on their missions.</h1>
+                        </div>
                     </div>
                 </div>
     			<div className="row company-offer">

@@ -7,18 +7,35 @@
 	top: 175px;
 }
 
-.homepage .row h1, .homepage .set-width {
-	font-size: 55px;
+.homepage .row.mission-statement h1 {
+	font-size: 580%;
 	color:white;
 	display:flex;
 	justify-content: center;
 }
 
-.homepage .set-width {
-	min-width: 420px;
+.homepage .row.mission-statement .left h1{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.homepage .row.mission-statement .right h1{
+	display: flex;
+	justify-content: flex-start;
 }
 
 .homepage .company-offer {
 	min-height: 360px;
 	background-color: #E5E5E5;
+}
+
+.fullscreen-bg {
+    z-index: -100;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.fullscreen-bg_video {
+    min-width: 100%;
+    min-height: 100%;
 }

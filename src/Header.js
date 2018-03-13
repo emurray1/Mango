@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import MangoLogo from './images/Mango.png';
+import MangoLogo from './images/Mango_Header.png';
 import './header.css';
 
 const Header = () => (
@@ -17,10 +17,10 @@ const Header = () => (
 			   	</div>
 			</div>
 	   		<div className="row logo">
-	   			<div className="col-sm-3">
+	   			<div className="col-md-2 col-sm-3">
 	   				<img className="img" alt='Mango Development Logo'  src={MangoLogo} />
 	   			</div>
-				<div className="col-sm-9 nav">
+				<div className="col-md-10 col-sm-9 nav align-self-center">
 			  		<Link to="/product" className="">
 			      		<div className='content'>
 			        		What We Do

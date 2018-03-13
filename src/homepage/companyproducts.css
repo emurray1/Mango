@@ -3,8 +3,12 @@
 	background-color: #E5E5E5;
 }
 
+.company-products {
+	padding: 35px;
+}
+
 .company-products .box {
 	height: 200px;
-	width: auto;
-	background-color: #151515;
+	background: #A95E0A;
+	display:table;
 }
