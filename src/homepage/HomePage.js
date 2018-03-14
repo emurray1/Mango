@@ -10,26 +10,38 @@ const HomePage = () => {
 		return (
     		<div className='homepage container-fluid'>
                 <div className="row mission-statement">
-                    <div className="fullscreen-bg col-md-12">
+                    <div className="fullscreen-bg col-12">
                         <video className="fullscreen-bg_video" autoPlay loop >
                             <source src={HeroVideo} type="video/mp4" />
                         </video>
                     </div>
-                    <div className="inner col-lg-12">
-                        <h1>We design and develop web & mobile apps</h1>
-                        <div className="col-md-6 left">
-                            <h1>to support </h1>
-                        </div>
-                        <div className="col-md-6 right">
-                            <h1><Rotate /></h1>
-                        </div>
-                        <div className="col-lg-12">
-                            <h1>on their missions.</h1>
-                        </div>
+                    <div className="inner col-12">
+                        {/* <ul>
+                            <li><h1>We design and develop web & mobile apps</h1></li>
+                            <li><div className="col-12 col-md-6 left"><h1>to support </h1></div></li>
+                            <li><div className="col-12 col-md-6 right"><h1><Rotate /></h1></div></li>
+                            <li><div className="col-12 col-lg-12"><h1>on their missions.</h1></div></li>           
+                            </ul>*/}
+                        <row>
+                            <h1>We design and develop web & mobile apps</h1>
+                        </row>
+                        <row>
+                            <div className="col-12 col-md-6 left">
+                                <h1>to support </h1>
+                            </div>
+                            <div className="col-12 col-md-6 right">
+                                <h1><Rotate /></h1>
+                            </div>
+                        </row>
+                        <row>
+                            <div className="col-12 col-lg-12">
+                                <h1>on their missions.</h1>
+                            </div>
+                        </row>
                     </div>
                 </div>
     			<div className="row company-offer">
-                    <div className="inner col-lg-12">
+                    <div className="inner col--12">
     		              <CompanyProducts />
                     </div>
                 </div>

@@ -8,7 +8,7 @@ const Header = () => (
 	<div className="header container-fluid">
    		<div className="container">
    			<div className="row">
-   				<div className="col-sm-12 login">
+   				<div className="col-12 login">
 					<Link to="/login">
 			    		<div className='content'>
 			    			Login
@@ -17,10 +17,10 @@ const Header = () => (
 			   	</div>
 			</div>
 	   		<div className="row logo">
-	   			<div className="col-md-2 col-sm-3">
+	   			<div className="col-6 col-md-2">
 	   				<img className="img" alt='Mango Development Logo'  src={MangoLogo} />
 	   			</div>
-				<div className="col-md-10 col-sm-9 nav align-self-center">
+				<div className="col-6 col-md-10 nav align-self-center">
 			  		<Link to="/product" className="">
 			      		<div className='content'>
 			        		What We Do

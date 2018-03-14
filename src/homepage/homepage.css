@@ -1,22 +1,25 @@
 .homepage .mission-statement {
-	height: 650px;
+	height: 640px;
 }
 
 .homepage .row.mission-statement h1 {
-	font-size: 580%;
 	color:white;
 	display:flex;
 	justify-content: center;
 }
 
-.homepage .row.mission-statement .left h1{
+.homepage .row.mission-statement .left h1 {
 	display: flex;
 	justify-content: flex-end;
 }
 
-.homepage .row.mission-statement .right h1{
+.homepage .row.mission-statement .right h1 {
 	display: flex;
 	justify-content: flex-start;
+}
+
+.homepage .row.mission-statement .right {
+	float:none;
 }
 
 .homepage .company-offer {
@@ -33,10 +36,7 @@
 
 .fullscreen-bg_video {
     min-width: 100%;
+    max-width: 100%;
     min-height: 100%;
 }
 
-.inner {
-	-webkit-backdrop-filter: blur(5px);
-	backdrop-filter: blur(5px);
-}

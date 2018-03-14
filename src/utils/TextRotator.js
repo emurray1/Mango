@@ -150,7 +150,7 @@ TextRotator.defaultProps = {
   deletingInterval: 50,
   emptyPause: 500,
   eraseMode: 'erase',
-  items: ['Businesses', 'Non-Profits', 'Organizations', 'Startups'],
+  items: ['Businesses', 'Nonprofits', 'Organizations', 'Startups'],
   pause: 1000,
   typingInterval: 50,
 };
