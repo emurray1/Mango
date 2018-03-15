@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "body-parser": "~1.18.2",
+    "bootstrap": "^4.0.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "es6": "0.0.7",
@@ -30,7 +31,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "devstart": "nodemon ./bin/www"
+    "devstart": "nodemon ./bin/www",
+    "sass": "sass --watch src/styles/scss:src/styles/css"
   },
   "devDependencies": {
     "nodemon": "^1.14.11"

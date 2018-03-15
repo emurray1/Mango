@@ -5,12 +5,12 @@ import MangoLogo from './images/Mango_Header.png';
 import './header.css';
 
 const Header = () => (
-	<div className="header container-fluid">
+	<div className="header container-fluid bg-primary">
    		<div className="container">
    			<div className="row">
    				<div className="col-12 login">
 					<Link to="/login">
-			    		<div className='content'>
+			    		<div className='text-secondary'>
 			    			Login
 			    		</div>
 			    	</Link>
@@ -22,22 +22,22 @@ const Header = () => (
 	   			</div>
 				<div className="col-6 col-md-10 nav align-self-center">
 			  		<Link to="/product" className="">
-			      		<div className='content'>
+			      		<div className='text-secondary'>
 			        		What We Do
 			      		</div>
 			    	</Link>
 			    	<Link to="/portfolio" className="">
-			      		<div className='content'>
+			      		<div className='text-secondary'>
 			        		What We Did
 			      		</div>
 			    	</Link>
 			    	<Link to="/" className="">
-			      		<div className="content">
+			      		<div className="text-secondary">
 			        		Who We Are
 			      		</div>
 			    	</Link>
 			    	<Link to="/contact" className="">
-			      		<div className='content'>
+			      		<div className='text-secondary'>
 			        		Contact
 			      		</div>
 			    	</Link>

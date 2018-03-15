@@ -8,8 +8,6 @@ import Product from './components/Product';
 import Header from './Header';
 import Footer from './Footer';
 
-import './app.css'
-
 const App = () => {
   return(
     <div>

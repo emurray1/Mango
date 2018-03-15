@@ -1,8 +1,3 @@
-.header {
-	background-color: #131313;
-	width: 100%;
-}
-
 .header .logo img {
 	display:flex;
 	justify-content: flex-start;
