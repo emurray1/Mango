@@ -6,7 +6,7 @@ class Footer extends Component {
 	render() {
 		return (
     		<div className="footer container-fluid">
-    			<div className="container">
+    			<div className="container text-white">
     				<p>Footer</p>
     			</div>
     		</div>
