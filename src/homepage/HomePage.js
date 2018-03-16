@@ -23,7 +23,7 @@ const HomePage = () => {
                             <li><div className="col-12 col-lg-12"><h1>on their missions.</h1></div></li>           
                             </ul>*/}
                         <row>
-                            <h1>We design and develop web & mobile apps</h1>
+                            <h1>We design & developcss web & mobile apps</h1>
                         </row>
                         <row>
                             <div className="col-12 col-md-6 left">

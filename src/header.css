@@ -1,21 +1,4 @@
-.header .logo img {
-	display:flex;
-	justify-content: flex-start;
-}
-
-.login {
-	display:flex;
-	justify-content: flex-end;
-}
-
-.row .nav {
-	padding-bottom: 10px;
-	display:flex;
-	justify-content: flex-end;
-	
-}
-
-.nav a {
+.navbar a {
 	padding-left: 65px;
 	font-weight: 400;
 	text-transform: uppercase;
