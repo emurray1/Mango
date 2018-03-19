@@ -6,7 +6,7 @@ import './header.css';
 
 const Header = () => (
    	<nav className="navbar bg-primary navbar-expand-lg sticky-top container-fluid">
-   		<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+   		<button className="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span className="navbar-toggler-icon"></span>
 		</button>	
    		<Link to="/">

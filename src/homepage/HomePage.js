@@ -9,33 +9,27 @@ import HeroVideo from '../images/girls_code.mp4';
 const HomePage = () => {
 		return (
     		<div className='homepage container-fluid'>
-                <div className="row mission-statement">
+                <div className="row mission-statement d-none d-md-block">
                     <div className="fullscreen-bg col-12">
                         <video className="fullscreen-bg_video" autoPlay loop >
                             <source src={HeroVideo} type="video/mp4" />
                         </video>
                     </div>
-                    <div className="inner col-12">
-                        {/* <ul>
-                            <li><h1>We design and develop web & mobile apps</h1></li>
-                            <li><div className="col-12 col-md-6 left"><h1>to support </h1></div></li>
-                            <li><div className="col-12 col-md-6 right"><h1><Rotate /></h1></div></li>
-                            <li><div className="col-12 col-lg-12"><h1>on their missions.</h1></div></li>           
-                            </ul>*/}
-                        <row>
-                            <h1>We design & developcss web & mobile apps</h1>
+                    <div className="container text-white">
+                        <row className="d-flex justify-content-center">
+                            <h2>We design & develop web & mobile apps</h2>
                         </row>
                         <row>
-                            <div className="col-12 col-md-6 left">
-                                <h1>to support </h1>
+                            <div className="col-12 col-md-6 left d-flex justify-content-end mr-auto">
+                                <h2>to support </h2>
                             </div>
-                            <div className="col-12 col-md-6 right">
-                                <h1><Rotate /></h1>
+                            <div className="col-12 col-md-6 right d-flex justify-content-start ml-auto">
+                                <h2><Rotate /></h2>
                             </div>
                         </row>
                         <row>
-                            <div className="col-12 col-lg-12">
-                                <h1>on their missions.</h1>
+                            <div className="col-12 d-flex justify-content-center">
+                                <h2>on their missions.</h2>
                             </div>
                         </row>
                     </div>
