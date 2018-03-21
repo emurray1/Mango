@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Rotate from './Rotate';
-import CompanyProducts from './CompanyProducts'
 
 import './homepage.css';
 import HeroVideo from '../images/girls_code.mp4';
@@ -34,9 +33,9 @@ const HomePage = () => {
                         </row>
                     </div>
                 </div>
-    			<div className="row company-offer">
-                    <div className="inner col--12">
-    		              <CompanyProducts />
+    			<div className="row">
+                    <div className="container">
+    		             
                     </div>
                 </div>
                 <div className="row">
