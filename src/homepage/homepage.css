@@ -1,5 +1,5 @@
 .homepage .mission-statement {
-	height: 550px;
+	height: 450px;
 }
 
 .fullscreen-bg {
@@ -23,7 +23,7 @@
 	margin-top: -45px; padding-left:0px;
 }
 
-.container-fluid .col-3 {
+.products.container-fluid .col-12 {
     height: 250px;
-    margin: 45px;
+    margin: 5px;
 }

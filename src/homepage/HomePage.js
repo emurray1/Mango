@@ -35,25 +35,25 @@ const HomePage = () => {
                         </row>
                     </div>
                 </div>
-                <div className="container-fluid bg-white">
+                <div className="container-fluid bg-dark">
                     <PortfolioSlider />
                 </div>
-                <div className="container-fluid bg-primary">
+                <div className="products container-fluid bg-primary">
                     <div className="container">
                     <div className="row">
-                        <div className="col-3 bg-secondary">
+                        <div className="col-12 col-lg-3 bg-secondary">
                         </div>
-                         <div className="col-3 bg-secondary">
+                         <div className="col-12 col-lg-3 bg-secondary">
                         </div>
-                         <div className="col-3 bg-secondary">
+                         <div className="col-12 col-lg-3 bg-secondary">
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-3 bg-secondary">
+                        <div className="col-12 col-lg-3 bg-secondary">
                         </div>
-                         <div className="col-3 bg-secondary">
+                         <div className="col-12 col-lg-3 bg-secondary">
                         </div>
-                         <div className="col-3 bg-secondary">
+                         <div className="col-12 col-lg-3 bg-secondary">
                         </div>
                     </div>
                     </div>
