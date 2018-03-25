@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Rotate from './Rotate';
+import PortfolioSlider from './HomepagePortfolio';
+
 
 import './homepage.css';
 import HeroVideo from '../images/girls_code.mp4';
@@ -33,17 +35,30 @@ const HomePage = () => {
                         </row>
                     </div>
                 </div>
-    			<div className="row">
+                <div className="container-fluid bg-white">
+                    <PortfolioSlider />
+                </div>
+                <div className="container-fluid bg-primary">
                     <div className="container">
-    		             
+                    <div className="row">
+                        <div className="col-3 bg-secondary">
+                        </div>
+                         <div className="col-3 bg-secondary">
+                        </div>
+                         <div className="col-3 bg-secondary">
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-3 bg-secondary">
+                        </div>
+                         <div className="col-3 bg-secondary">
+                        </div>
+                         <div className="col-3 bg-secondary">
+                        </div>
+                    </div>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="container text-white">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla mattis lectus sed finibus. Ut non varius mauris. Curabitur vulputate sit amet mi egestas sollicitudin. Sed mattis augue quis malesuada vehicula. Aliquam eget orci velit. Duis varius commodo odio. Nullam id iaculis justo. Donec aliquam cursus leo, non volutpat nisl finibus eget. Proin vel orci sit amet massa posuere sodales. Quisque luctus diam eget sollicitudin hendrerit. Pellentesque augue nibh, congue eu neque eu, maximus consequat tellus. Sed auctor quam et ante blandit, sed condimentum eros pellentesque. Nam et porttitor ligula, non porttitor urna. Integer ut tristique dolor, sagittis sollicitudin purus. In hac habitasse platea dictumst.</p>
-                    </div>
-                </div>
-    		</div>
+            </div>		
     	)
   }
 

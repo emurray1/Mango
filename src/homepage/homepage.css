@@ -23,4 +23,7 @@
 	margin-top: -45px; padding-left:0px;
 }
 
-
+.container-fluid .col-3 {
+    height: 250px;
+    margin: 45px;
+}
