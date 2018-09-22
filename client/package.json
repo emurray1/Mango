@@ -1,0 +1,43 @@
+{
+  "name": "connect",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "bootstrap": "^4.0.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "es6": "0.0.7",
+    "express": "^4.15.5",
+    "jade": "~1.11.0",
+    "jquery": "^3.3.1",
+    "morgan": "~1.9.0",
+    "nodejs": "0.0.0",
+    "npm": "^5.7.1",
+    "react": "^15.6.2",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-redux": "^5.0.6",
+    "react-rotating-text": "^1.2.1",
+    "react-router-config": "^1.0.0-beta.4",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.10",
+    "reactstrap": "^5.0.0-alpha.4",
+    "redux": "^3.7.2",
+    "redux-form": "^7.1.2",
+    "redux-thunk": "^2.2.0",
+    "serve-favicon": "~2.4.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "devstart": "nodemon ./bin/www",
+    "sass": "sass --watch src/styles/scss:src/styles/css"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  },
+  "proxy": "http://localhost:3000"
+}
